@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import NavLinks from './nav-links';
-import AcmeLogo from '@/app/ui/acme-logo';
+import AngukLogo from '@/app/ui/anguk-logo';
 import { PowerIcon } from '@heroicons/react/24/outline';
 
 export default function SideNav() {
@@ -11,7 +11,7 @@ export default function SideNav() {
         href="/"
       >
         <div className="w-32 text-white md:w-40">
-          <AcmeLogo />
+          <AngukLogo />
         </div>
       </Link>
       <div className="flex grow flex-row justify-between space-x-2 md:flex-col md:space-x-0 md:space-y-2">
