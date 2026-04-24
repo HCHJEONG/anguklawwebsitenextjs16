@@ -13,7 +13,12 @@ const links = [
     href: '/members/attorneys',
     icon: DocumentMagnifyingGlassIcon,
   },
-  { name: 'Consultants', href: '/members/consultants', icon: FaceSmileIcon },
+  { 
+    name: 'Consultants', 
+    // href: '/members/consultants', 
+    href: '/', 
+    icon: FaceSmileIcon 
+  },
 ];
 
 export default function NavLinks() {
