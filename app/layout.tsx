@@ -7,7 +7,7 @@ export const metadata: Metadata = {
     template: '%s | Anguk Law Offices',
     default: 'Anguk Law Offices',
   },
-  description: 'The official Next.js Learn Dashboard built with App Router.',
+  description: 'Anguk Law Offices is a leading Korean law firm for foreign investors.',
   metadataBase: new URL('https://anguklaw.com'),
 };
 
