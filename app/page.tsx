@@ -7,7 +7,7 @@ import Image from 'next/image';
 
 export default function Page() {
   return (
-    <main className="flex min-h-screen flex-col p-6">
+    <main className="flex min-h-screen overflow-auto flex-col p-6">
       {/* <div className={styles.shape} /> */}
       <div className="flex justify-between h-20 shrink-0 items-end rounded-lg bg-blue-500 p-4 md:h-52">
         <AngukLogo />
@@ -52,13 +52,13 @@ export default function Page() {
             <span>Services</span> <ArrowRightIcon className="w-5 md:w-6" />
           </Link>
           <Link
-            href="/members"
+            href="/members/attorneys"
             className="flex items-center gap-5 self-start rounded-lg bg-blue-500 px-6 py-3 text-sm font-medium text-white transition-colors hover:bg-blue-400 md:text-base"
           >
             <span>Members</span> <ArrowRightIcon className="w-5 md:w-6" />
           </Link>
           <Link
-            href="/contact"
+            href="/contact/address"
             className="flex items-center gap-5 self-start rounded-lg bg-blue-500 px-6 py-3 text-sm font-medium text-white transition-colors hover:bg-blue-400 md:text-base"
           >
             <span>Contact</span> <ArrowRightIcon className="w-5 md:w-6" />
