@@ -21,7 +21,7 @@ export default function Page() {
           {("Address: Chamber 304, 7, Yulgok-ro 2-gil, Jongno-gu, Seoul, Republic of Korea, 03143")}
         </p>
         <p className={`${styles.para_wrapper} ${styles.para_accent}`}>
-          {("TEL: +82-2-3210-3330")}
+          {("TEL: +82-2-3210-3330 EMAIL: hcjeong@anguklaw.com")}
         </p>
       </div>
     </div>);

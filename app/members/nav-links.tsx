@@ -1,7 +1,7 @@
 import {
   HomeIcon,
   FaceSmileIcon,
-  PencilIcon
+  DocumentMagnifyingGlassIcon
 } from '@heroicons/react/24/outline';
 
 // Map of links to display in the side navigation.
@@ -11,7 +11,7 @@ const links = [
   {
     name: 'Attorneys',
     href: '/members/attorneys',
-    icon: PencilIcon,
+    icon: DocumentMagnifyingGlassIcon,
   },
   { name: 'Consultants', href: '/members/consultants', icon: FaceSmileIcon },
 ];
