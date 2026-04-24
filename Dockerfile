@@ -3,6 +3,7 @@ FROM base AS deps
 WORKDIR /app
 
 COPY package.json package-lock.json* ./
+RUN npm install -g pnpm
 RUN pnpm ci
 
 FROM base AS builder
