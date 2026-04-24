@@ -4,7 +4,7 @@ import { Metadata } from 'next';
 export const metadata: Metadata = {
   title: 'Contact',
   description: 'Anguk Law Offices is a leading Korean law firm for foreign investors.',
-  metadataBase: new URL('https://anguklaw.com'),
+  metadataBase: new URL('https://anguklaw.com/contact/address'),
 };
 
 export default function Layout({ children }: { children: React.ReactNode }) {
