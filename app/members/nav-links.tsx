@@ -15,8 +15,8 @@ const links = [
   },
   { 
     name: 'Consultants', 
-    // href: '/members/consultants', 
-    href: '/', 
+    href: '/members/consultants', 
+    // href: '/', 
     icon: FaceSmileIcon 
   },
 ];
