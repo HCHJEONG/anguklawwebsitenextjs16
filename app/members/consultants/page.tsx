@@ -131,7 +131,7 @@ export default function Areas () {
             />
           </div>
           <p className={styles.para_wrapper}>
-            {"In addition, Angook Law Office provides legal services trademarked \""} 
+            {"In addition, Anguk Law Offices provides legal services trademarked \""} 
             <a 
               href='https://penvot.com'              
               target="_blank"
@@ -142,7 +142,7 @@ export default function Areas () {
             {"\" that integrate IT technology with legal expertise."}
           </p>
           <p className={`${styles.para_wrapper} ${styles.para_accent}`}>
-            {"Welcome to the world of Angook Law Offices. "}
+            {"Welcome to the world of Anguk Law Offices. "}
           </p>
           {/* <div className={styles.image_wrapper}>          
             <Image
