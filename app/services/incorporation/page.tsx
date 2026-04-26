@@ -19,64 +19,35 @@ export default function Areas () {
           </div>
           <p className={`${styles.para_wrapper} ${styles.para_accent}`}>
             {
-              "국제거래 소송과 가사 "
+              "Company Registration in South Korea "
             }
           </p>
           <p className={styles.para_wrapper}>
             {
-              "외국기업과 외국인이 관계된 사법상의 분쟁은 특별한 고려사항들이 있습니다. "
-              +
-              "그리고 다량의 외국어 자료의 분석과 외국인을 상대로 한 교섭이 필요합니다. "
-              +
-              "국제거래 소송에서 전문성과 경험을 가진 조력자가 필요한 이유입니다. "
-              +
-              "가사 소송도 실체법이나 절차에 있어서 특별한 점이 많습니다. " 
-              +
-              "무엇보다도 의뢰인의 내면적 소리를 끊기 있게 경청하고 이를 법적으로 구성해내야 합니다. "
-              +
-              "안국법률사무소는 일반 민사는 물론 이상과 같은 분야에서 의뢰인이 추구하는 가치를 옹호합니다."
+              "South Korea is a fantastic place for international investors, offering a reliable, high-tech business world with clear rules and a very solid legal system. However, getting set up means dealing with a few big laws, like the Commercial Act and the Foreign Investment Promotion Act, along with various tax and hiring rules.s foreign investors a sophisticated, rules-based commercial environment backed by a well-developed court system and a transparent corporate registry. Establishing a legal presence requires navigating the Commercial Act (상법, Sangbeop), the Foreign Investment Promotion Act (외국인투자 촉진법), and a layered set of tax and labour obligations. The risks of proceeding without specialist guidance are concrete: incorrect entity selection can trigger double taxation, and missed registration deadlines carry administrative penalties. This article covers the main legal forms available to foreign investors, the step-by-step registration process, ongoing compliance obligations, and the most common pitfalls that international businesses encounter in South Korea."
             }
           </p>
           <p className={styles.para_wrapper}>
             {
-              "국제거래 소송과 자문 "
-            }
-          </p>
-          <p className={styles.para_wrapper}>
-            {
-              "이혼 "
-            }
-          </p>
-          <p className={styles.para_wrapper}>
-            {
-              "의료소송 "
-            }
-          </p>
-          <p className={styles.para_wrapper}>
-            {
-              "IT 스타트업 소송과 자문 "
-            }
-          </p>
-          <p className={styles.para_wrapper}>
-            {
-              "집합건물 소송과 자분 "
-            }
-          </p>
-          <p className={styles.para_wrapper}>
-            {
-              "민사소송 "
-            }
-          </p>
-          <p className={styles.para_wrapper}>
-            {
-              "형사고소 "
+              "Doing it alone can be tricky—picking the wrong business structure might lead to extra taxes, and missing deadlines can result in annoying fines. To help you get it right, this guide breaks down the different ways to set up your business, explains the registration steps, covers your ongoing responsibilities, and points out the common mistakes to avoid."
             }
           </p>
           
-          {/* <p className={`${styles.para_wrapper} ${styles.para_accent}`}>
-            {t("당신을 안국법률사무소로 초대합니다. ")}
-          </p> */}
-          
+          <p className={styles.para_wrapper}>
+            {
+              "How about we look into the specific registration steps for setting up a branch versus a local corporation?"
+            }
+          </p>          
+          <p className={`${styles.para_wrapper} ${styles.para_accent}`}>
+            {
+              "Legal forms for your business"
+            }
+          </p>
+          <p className={styles.para_wrapper}>
+            {
+              "Foreign investors in South Korea typically choose between the Jusik Hoesa (joint-stock company), Yuhan Hoesa (LLC), and a branch office. The Jusik Hoesa is the standard for larger operations, allowing public shares, while the Yuhan Hoesa offers more privacy for smaller ventures. While branches are faster to establish, they do not create a separate legal entity, leaving the parent company directly liable. Local partners and banks generally prefer the stability of a locally incorporated entity over a branch, which is often chosen just for convenience."
+            }
+          </p>
         </div>
         <div className={styles.areas_content_column}>    
           <div className={styles.image_wrapper}>          
@@ -89,56 +60,65 @@ export default function Areas () {
               priority
             />
           </div>
+
           <p className={`${styles.para_wrapper} ${styles.para_accent}`}>
             {
-              "헌법소원과 출입국관리 분쟁 "
+              "Registration steps, timelines and costs"
             }
           </p>
           <p className={styles.para_wrapper}>
             {
-              "실정법은 주로 행정기관에서 안을 만들어 입법기관에서 의결해 만들고 그 과정에 참여하는 사람들은 비교적 소수입니다. "
-              +
-              "그리고 많은 선량한 시민들은 이러한 법률이나 행정규칙에 대해서 참을성 있게 순응하며 이를 준수합니다. "
-              +
-              "하지만 실정법도 사람이 만든 것이기에 불합리한 것일 수 있습니다. "
-              +
-              "이런 경우도 잘못된 것을 바로잡아서 본인의 피해를 구제하고 나아가 사회를 더 개선시킬 수 있습니다. "
-              +
-              "우리 헌법질서는 헌법소원이라는 훌륭한 제도를 두고 있고 부당한 기소유예나 입법 기타 공권력에 의한 기본권 침해의 구제를 이를 통해 이룰 수 있습니다. "
-              +
-              "나아가 외국인들도 헌법상 인권, 출입국관리법과 난민법에 따라 정당하게 처우를 받을 수 있습니다. "
-              +
-              "어떤 정부도 외국인이라는 이유로 부당하게 처우할 수는 없습니다. "
+              "Setting up a Jusik Hoesa or Yuhan Hoesa follows a clear path under Korean law, usually taking about three to six weeks from the time you start your paperwork until you get your official corporate registration certificate."
             }
           </p>
           <p className={styles.para_wrapper}>
             {
-              "기소유예 처분 취소 "
+"Here’s a quick look at the main steps:"
             }
           </p>
           <p className={styles.para_wrapper}>
             {
-              "출입국관리법 위반 분쟁 "
+"Drafting the Rules: You'll create and notarize your \"Articles of Incorporation\" (the company’s rulebook)."
+            }
+          </p>
+
+          <p className={styles.para_wrapper}>
+            {
+"Funding: You’ll deposit your starting capital into a local bank to get a deposit certificate."
             }
           </p>
           <p className={styles.para_wrapper}>
             {
-              "부당한 공권력 행사에 따른 기본권 침해 "
+"The Court Filing: You officially file your application with the local District Court Registry."
+            }
+          </p>
+
+          <p className={styles.para_wrapper}>
+            {
+"Tax Setup: Within 20 days of starting, you need to register with the National Tax Service to get your business number."
             }
           </p>
           <p className={styles.para_wrapper}>
             {
-              "부당한 행정처분에 의한 재산권 침해 "
+"Local Licenses: Depending on what you do, you might need extra permits from the local government."
             }
           </p>
-          {/* <p className={styles.para_wrapper}>
-            {t(
-              "변호사시험 출제 및 채점위원 "
-            )}
+          <p className={styles.para_wrapper}>
+            {
+"While the law technically doesn't require a huge amount of starting money, banks and officials like to see a balance that matches your business goals. A big tip: if you invest $100,000 USD or more, you fall under the Foreign Investment Promotion Act. This is great because it gives you access to KOTRA’s \"one-stop service\" and potential tax breaks!"
+            }
           </p>
-          <p className={`${styles.para_wrapper} ${styles.para_accent}`}>
-            {t("당신을 안국법률사무소로 초대합니다. ")}
-          </p> */}
+          <p className={styles.para_wrapper}>
+            {
+"While the law technically doesn't require a huge amount of starting money, banks and officials like to see a balance that matches your business goals. A big tip: if you invest $100,000 USD or more, you fall under the Foreign Investment Promotion Act. This is great because it gives you access to KOTRA’s \"one-stop service\" and potential tax breaks!"
+            }
+          </p>
+
+          <p className={styles.para_wrapper}>
+            {
+"Keep in mind there are costs involved, like notary fees and court charges, which scale with your capital. You’ll also need to budget for legal fees, plus translation and document certification (apostille) costs since you're bringing in foreign paperwork."
+            }
+          </p>
         </div>
         <div className={styles.areas_content_column}> 
           <div className={styles.image_wrapper}>          
@@ -151,7 +131,7 @@ export default function Areas () {
               priority
             />
           </div>
-          <p className={styles.para_wrapper}>
+          {/* <p className={styles.para_wrapper}>
             {"이외에도 안국법률사무소는 IT 기술과 법률 전문성을 접목한 "} 
             <a 
               href='https://penvot.com'              
@@ -161,20 +141,35 @@ export default function Areas () {
               penvot.com
             </a> 
             {"이란 서비스를 제공하고 있습니다. "}
-          </p>
+          </p> */}
           <p className={`${styles.para_wrapper} ${styles.para_accent}`}>
-            {"당신을 안국법률사무소의 세계로 초대합니다. "}
+            {"Foreign investment rules and sector restrictions"}
           </p>
-          {/* <div className={styles.image_wrapper}>          
-            <Image
-              src="/assets/img/myofficelobby.jpg"
-              alt="Anguk Law Offices"
-              className={styles.angukLogo}
-              width={275}
-              height={150}
-              priority
-            />
-          </div> */}
+          <p className={styles.para_wrapper}>
+            {
+"Think of the Foreign Investment Promotion Act (FIPA) as the main rulebook for bringing money into South Korea. One of the most important steps is the Foreign Investment Notification. You need to file this with a bank or KOTRA before or during the time you send your funds. It’s not just a formality—if you skip it, your investment might lose its legal protection under the law!"
+            }
+          </p>
+          <p className={styles.para_wrapper}>
+            {
+"While Korea is very open, some areas have \"Keep Out\" or \"Proceed with Caution\" signs."
+            }
+          </p>
+          <p className={styles.para_wrapper}>
+            {
+"Restricted Areas: Sectors like broadcasting, telecommunications, aviation, and some financial services have limits on how much a foreigner can own."
+            }
+          </p>
+          <p className={styles.para_wrapper}>
+            {
+"Approval is Key: If you’re eyeing a restricted sector, you can’t just start a company. You need a thumbs-up from the government first, which can take a few months. Starting without this approval is a major risk—the government could actually shut your company down later."
+            }
+          </p>
+          <p className={styles.para_wrapper}>
+            {
+"Pro-tip: Don't forget about Investment Treaties. Korea has special deals with many countries that offer extra protection and ways to settle disputes. Checking if your home country has one of these treaties can give you a big advantage."
+            }
+          </p>
         </div>
       </div>
     </div>
