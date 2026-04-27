@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import styles from './page.module.css';
 
-export default function Areas () {
+export default function Services () {
   return (
     <div className={styles.fullView}>
       <div className={styles.areas_content_wrapper}>

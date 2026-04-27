@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   metadataBase: new URL('https://anguklaw.com/services/liquidation'),
 };
 
-export default function Areas () {
+export default function Liquidation () {
   return (
     <div className={styles.fullView}>
       <div className={styles.areas_content_wrapper}>
@@ -26,7 +26,7 @@ export default function Areas () {
           </div>
           <h1 className={`${styles.para_wrapper} ${styles.para_accent}`}>
             {
-              "Company Liquidation in South Korea "
+              "Company Winding-up: Liquidation in South Korea "
             }
           </h1>
           <p className={styles.para_wrapper}>

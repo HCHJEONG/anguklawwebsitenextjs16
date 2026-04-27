@@ -8,8 +8,7 @@ export const metadata: Metadata = {
   metadataBase: new URL('https://anguklaw.com/services/incorporation'),
 };
 
-
-export default function Areas () {
+export default function Incorporation () {
   return (
     <div className={styles.fullView}>
       <div className={styles.areas_content_wrapper}>
@@ -27,7 +26,7 @@ export default function Areas () {
           </div>
           <h1 className={`${styles.para_wrapper} ${styles.para_accent}`}>
             {
-              "Company Registration in South Korea "
+              "Company Establishment: Incorporation in South Korea "
             }
           </h1>
           <p className={styles.para_wrapper}>

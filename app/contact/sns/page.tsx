@@ -8,7 +8,7 @@ import {
   ChatBubbleLeftEllipsisIcon
 } from '@heroicons/react/24/outline';
 
-export default function Page() {
+export default function Sns () {
   return (<div className={`${lusitana.className}`}>
     <a href="mailto:hcjeong@anguklaw.com" className="flex h-[48px] grow items-center justify-start gap-2 rounded-md bg-gray-50 p-3 text-sm font-medium hover:bg-sky-100 hover:text-blue-600 md:flex-none md:justify-start md:p-2 md:px-3">
       <PaperAirplaneIcon className="w-6" />

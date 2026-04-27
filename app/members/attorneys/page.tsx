@@ -1,7 +1,14 @@
 import Image from 'next/image';
 import styles from './page.module.css';
+import { Metadata } from 'next';
 
-export default function Members () {
+export const metadata: Metadata = {
+  title: 'Attorneys | Anguk Law Offices',
+  description: 'Anguk Law Offices is a leading Korean law firm for foreign investors.',
+  metadataBase: new URL('https://anguklaw.com/members/attorneys'),
+};
+
+export default function Attorneys () {
   return (
     <div className={styles.fullView}>
       <div className={styles.members_content_wrapper}>

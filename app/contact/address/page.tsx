@@ -1,6 +1,6 @@
 import styles from './page.module.css';
 
-export default function Page() {
+export default function Address () {
   return (
     <div className={styles.fullView}>
       <div className={styles.map_wrapper}>

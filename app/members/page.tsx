@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import styles from './page.module.css';
 
-export default function About () {
+export default function Members () {
   return (
     <div className={styles.fullView}>
       <div className={styles.about_content_wrapper}>
