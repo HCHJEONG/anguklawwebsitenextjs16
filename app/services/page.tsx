@@ -1,91 +1,164 @@
 import Image from 'next/image';
 import styles from './page.module.css';
 
-export default function About () {
+export default function Areas () {
   return (
     <div className={styles.fullView}>
-      <div className={styles.about_content_wrapper}>
-        <div className={styles.about_content_column}>
+      <div className={styles.areas_content_wrapper}>
+        <div className={styles.areas_content_column}>
           
           <div className={styles.image_wrapper}>
             <Image
-              src="/assets/img/mypleading01.png"
+              src="/assets/img/justicehammer.png"
               alt="Anguk Law Offices"
               className={styles.angukLogo}
-              width={200}
-              height={250}
+              width={300}
+              height={200}
               priority
             />
           </div>
-          <p className={styles.para_wrapper}>
+          <p className={`${styles.para_wrapper} ${styles.para_accent}`}>
             {
-              'Anguk Law Offices treats every single case with the utmost care. This is because each case holds our clients\' concerns and values, and we truly cherish what matters most to them.'   }
-          </p>
-          
-          <p className={styles.para_wrapper}>
-            {
-              "When facing significant tasks, a reliable partner becomes a necessity. No one can do it all alone. Thus, choosing your partner is as important as the mission itself."
-            }
-          </p>
-          
-          <p className={styles.para_wrapper}>
-            {
-              "Since its establishment on March 9, 2001, Anguk Law Offices has consistently upheld the trust of numerous clients. Over the past two decades, we have remained a steady presence in the same location, growing alongside our clients and supporting them through every challenge in an ever-changing world."            }
-          </p>
-          
-        </div>
-        <div className={styles.about_content_column}>    
-          <div className={styles.image_wrapper}>          
-            <Image
-              src="/assets/img/mydeskmonitor.jpg"
-              alt="Anguk Law Offices"
-              className={styles.angukLogo}
-              width={275}
-              height={145}
-              priority
-            />
-          </div>
-          <p className={styles.para_wrapper}>
-            {
-              "We delve deep into the details of every case. Because every legal matter carries its own history, clear organization is essential to uncovering the truth and ensuring the right outcome."
+              "International Trade Litigation and Family Law"
             }
           </p>
           <p className={styles.para_wrapper}>
             {
-              "Anguk Law Offices acts with speed, yet without rushing. We prioritize consulting with our clients on the order of business, starting first with a deep understanding of your voice and intended message. Our foundation is built on our clients' goals and understanding rather than mere legal expertise. Handling a case without the client's comprehension is, in our view, akin to conducting a surgical procedure without consent—regardless of the intended benefit."  
+              "Legal disputes involving foreign corporations and individuals involve unique considerations. They require the analysis of extensive foreign-language documentation and direct negotiation with foreign parties. This is why having an advocate with expertise and experience in international trade litigation is essential. "
             }
           </p>
-        </div>
-        <div className={styles.about_content_column}> 
-          <div className={styles.image_wrapper}>          
-            <Image
-              src="/assets/img/myofficebldgsunset.jpg"
-              alt="Anguk Law Offices"
-              className={styles.angukLogo}
-              width={275}
-              height={150}
-              priority
-            />
-          </div>
           <p className={styles.para_wrapper}>
-            {"Are you suffering from an unfair disadvantage because a state institution failed to act justly?"}
+            {
+              "International Trade Litigation and Advisory"
+            }
           </p>
           <p className={styles.para_wrapper}>
-            { "We cordially invite you to Anguk Law Offices."}
-          </p>
-          <p className={styles.para_wrapper}>
-            {"Have you been victimized by the bad faith and deceptive conduct of another party?"}
-          </p>
-          <p className={styles.para_wrapper}>
-            { "We cordially invite you to Anguk Law Offices."}
-          </p>
-          <p className={styles.para_wrapper}>
-            {"Are tedious procedures becoming a barrier to achieving your goals?"}
+            {
+              "Business Setting and Exit Strategies"
+            }
           </p>
           <p className={`${styles.para_wrapper} ${styles.para_accent}`}>
-            { "We cordially invite you to Anguk Law Offices."}
+            {
+              "Civil and Family Law"
+            }
           </p>
+          <p className={styles.para_wrapper}>
+            {
+              "Family law litigation also presents distinct complexities in both substantive law and procedure. Above all, it requires a partner who listens patiently to the client's voice and translates those personal concerns into a solid legal framework. Anguk Law Offices stands by the values our clients seek, providing dedicated representation in general civil matters as well as these specialized fields."
+            }
+          </p>
+          <p className={styles.para_wrapper}>
+            {
+              "Divorce "
+            }
+          </p>
+          <p className={styles.para_wrapper}>
+            {
+              "Medical Malpractice Lawsuit "
+            }
+          </p>
+          <p className={styles.para_wrapper}>
+            {
+              "IT Startup Litigation and Legal Counseling"
+            }
+          </p>
+          <p className={styles.para_wrapper}>
+            {
+              "Condominium and Multi-Unit Building Litigation and Advisory"
+            }
+          </p>
+          <p className={styles.para_wrapper}>
+            {
+              "Civil Litigation "
+            }
+          </p>
+          <p className={styles.para_wrapper}>
+            {
+              "Criminal Complaint, Criminal Defense and Prosecution Support"
+            }
+          </p>
+          
+          {/* <p className={`${styles.para_wrapper} ${styles.para_accent}`}>
+            {t("당신을 안국법률사무소로 초대합니다. ")}
+          </p> */}
+          
+        </div>
+        <div className={styles.areas_content_column}>    
           <div className={styles.image_wrapper}>          
+            <Image
+              src="/assets/img/kyungbokgungview.jpg"
+              alt="Anguk Law Offices"
+              className={styles.angukLogo}
+              width={300}
+              height={200}
+              priority
+            />
+          </div>
+          <p className={`${styles.para_wrapper} ${styles.para_accent}`}>
+            {
+              "Constitutional Petition and Immigration Disputes "
+            }
+          </p>
+          <p className={styles.para_wrapper}>
+            {
+              "Positive law is primarily drafted by administrative bodies and enacted by legislative assemblies, involving only a relatively small number of people in the process. Most law-abiding citizens patiently comply with and observe these laws and administrative regulations. However, because positive law is a human creation, it can at times be irrational. In such cases, it is possible to rectify these errors, seek redress for personal damages, and ultimately improve society. Our constitutional order provides an excellent system known as the Constitutional Complaint, which serves as a remedy for the infringement of fundamental rights caused by unjust suspensions of indictment, legislation, or other exercises of public power. Furthermore, foreign nationals are entitled to fair treatment under constitutional human rights, the Immigration Control Act, and the Refugee Act. No government has the right to treat an individual unfairly simply because of their status as a foreign national."
+            }
+          </p>
+          <p className={styles.para_wrapper}>
+            {
+              "Cancellation of the Decision to Suspend Indictment"
+            }
+          </p>
+          <p className={styles.para_wrapper}>
+            {
+              "Disputes over Violations of the Immigration Act"
+            }
+          </p>
+          <p className={styles.para_wrapper}>
+            {
+              "Infringement of Fundamental Rights caused by the Unjust Exercise of Public Power"
+            }
+          </p>
+          <p className={styles.para_wrapper}>
+            {
+              "Infringement of Property Rights caused by Unjust Administrative Actions "
+            }
+          </p>
+          {/* <p className={styles.para_wrapper}>
+            {t(
+              "변호사시험 출제 및 채점위원 "
+            )}
+          </p>
+          <p className={`${styles.para_wrapper} ${styles.para_accent}`}>
+            {t("당신을 안국법률사무소로 초대합니다. ")}
+          </p> */}
+        </div>
+        <div className={styles.areas_content_column}> 
+          <div className={styles.image_wrapper}>          
+            <Image
+              src="/assets/img/myofficestairs.jpg"
+              alt="Anguk Law Offices"
+              className={styles.angukLogo}
+              width={300}
+              height={550}
+              priority
+            />
+          </div>
+          <p className={styles.para_wrapper}>
+            {"In addition, Anguk Law Offices provides legal services trademarked \""} 
+            <a 
+              href='https://penvot.com'              
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              penvot.com
+            </a> 
+            {"\" that integrate IT technology with legal expertise."}
+          </p>
+          <p className={`${styles.para_wrapper} ${styles.para_accent}`}>
+            {"Welcome to the world of Anguk Law Offices. "}
+          </p>
+          {/* <div className={styles.image_wrapper}>          
             <Image
               src="/assets/img/myofficelobby.jpg"
               alt="Anguk Law Offices"
@@ -94,50 +167,9 @@ export default function About () {
               height={150}
               priority
             />
-          </div>
+          </div> */}
         </div>
       </div>
     </div>
   )
 }
-
-// "use client";
-
-// import { Canvas } from "@react-three/fiber";
-// import {
-//   CameraControls,
-//   Environment,
-//   PerspectiveCamera,
-// } from "@react-three/drei";
-// import { Box, Cactus, Camera, Level, Sudo } from "../../components/Scene";
-// import styles from "./page.module.css";
-
-// export default function About () {
-//   return (
-//     <div
-//       className={styles.fullView}
-//       // style={{
-//       //   width: '100%',
-//       //   height: '100%',
-//       //   minHeight: '100dvh',
-//       //   backgroundColor: 'aquablue',
-//       // }}
-//     >
-//       <Canvas 
-//         flat 
-//       >
-//         <CameraControls minPolarAngle={0} maxPolarAngle={Math.PI / 1.6} />
-//         <ambientLight intensity={Math.PI / 2} />
-//         <group scale={20} position={[0, -10, 0]}>
-//           <Level />
-//           <Sudo />
-//           <Camera />
-//           <Cactus />
-//           <Box position={[-0.8, 1.4, 0.4]} scale={0.15} />
-//         </group>
-//         <Environment preset="city" background blur={1} />
-//         <PerspectiveCamera makeDefault position={[80, 20, 80]} />
-//       </Canvas>
-//     </div>
-//   )
-// }

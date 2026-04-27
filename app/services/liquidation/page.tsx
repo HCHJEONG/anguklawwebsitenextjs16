@@ -39,7 +39,7 @@ export default function Areas () {
           </p>
           <p className={styles.para_wrapper}>
             {
-              "The Two-Thirds Rule: For major changes like closing the company, you need a special resolution. This means at least two-thirds of the voting shares present (and at least one-third of all shares) must agree. A common trap for international owners is thinking a simple majority (51%) is enough—it isn't!"
+              "The Two-Thirds Rule: For major changes like closing the company, you need a special resolution. This means at least two-thirds of the voting shares present (and at least one-third of all shares) must agree. A common trap for international owners is thinking a simple majority (51%) is enough—it isn't."
             }
           </p>
           <p className={styles.para_wrapper}>

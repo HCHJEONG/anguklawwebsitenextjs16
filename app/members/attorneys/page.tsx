@@ -29,7 +29,7 @@ export default function Members () {
             {'Doctor of Philosophy (Ph.D.) in Law, Faculty of Law, University of Delhi'}
             <br/>
             <span style={{fontSize: '0.8rem'}}>
-              {'Ph.D. Dissertation'}
+              {'Ph.D. Dissertation: '}
             </span>
             <br/>
             <span style={{fontSize: '0.8rem', color: 'green',}}>
@@ -39,20 +39,20 @@ export default function Members () {
           <p className={styles.para_wrapper}>
             {'Graduated from Seoul National University College of Law'}
           </p>
-          <p className={styles.para_wrapper}>
-            {'Member of the Question Drafting and Grading Committee for the Bar Examination'}
+          <p className={styles.para_wrapper} style={{color: 'green',}}>
+            {'Member of the Question Drafting and Grading Committee for the National Bar Examination'}
           </p>
           <p className={styles.para_wrapper}>
             {'Passed the qualification exams for judges, prosecutors, and lawyers'}
           </p>
-          <p className={styles.para_wrapper}>
+          <p className={styles.para_wrapper} style={{color: 'green',}}>
             {'Graduated from the Judicial Research and Training Institute (30th class)'}
           </p>
           <p className={styles.para_wrapper}>
             {'Master of Laws (LL.M.) from Seoul National University Graduate School'}
             <br/>
             <span style={{fontSize: '0.8rem'}}>
-              {'Master Thesis'}
+              {'Master Thesis: '}
             </span>
             <br/>
             <span style={{fontSize: '0.8rem', color: 'green',}}>
@@ -62,8 +62,8 @@ export default function Members () {
           <p className={styles.para_wrapper}>
             {'Instructor at HUFS Law School'}
             <br/>
-            <span style={{fontSize: '0.8rem'}}>
-              {'Civil Law'}
+            <span style={{fontSize: '0.8rem', color: 'green',}}>
+              {'Course: Civil Law'}
             </span>
           </p>
           <p className={styles.para_wrapper}>

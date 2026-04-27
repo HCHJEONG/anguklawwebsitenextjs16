@@ -24,20 +24,18 @@ export default function Areas () {
           </p>
           <p className={styles.para_wrapper}>
             {
-              "South Korea is a fantastic place for international investors, offering a reliable, high-tech business world with clear rules and a very solid legal system. However, getting set up means dealing with a few big laws, like the Commercial Act and the Foreign Investment Promotion Act, along with various tax and hiring rules.s foreign investors a sophisticated, rules-based commercial environment backed by a well-developed court system and a transparent corporate registry. Establishing a legal presence requires navigating the Commercial Act (상법, Sangbeop), the Foreign Investment Promotion Act (외국인투자 촉진법), and a layered set of tax and labour obligations. The risks of proceeding without specialist guidance are concrete: incorrect entity selection can trigger double taxation, and missed registration deadlines carry administrative penalties. This article covers the main legal forms available to foreign investors, the step-by-step registration process, ongoing compliance obligations, and the most common pitfalls that international businesses encounter in South Korea."
+              "South Korea is a fantastic place for international investors, offering a reliable, high-tech business world with clear rules and a very solid legal system. However, getting set up means dealing with a few big laws, like the Commercial Act and the Foreign Investment Promotion Act, along with various tax and hiring rules. "
+              +
+              "Foreign investors are always supposed to deal with a sophisticated, rules-based commercial environment backed by a well-developed court system and a transparent corporate registry. Establishing a legal presence requires navigating the Commercial Act (상법, Sangbeop), the Foreign Investment Promotion Act (외국인투자촉진법), and a layered set of tax and labour obligations. "
+              +
+              "The risks of proceeding without specialist guidance are concrete: incorrect entity selection can trigger double taxation, and missed registration deadlines carry administrative penalties. This article covers the main legal forms available to foreign investors, the step-by-step registration process, ongoing compliance obligations, and the most common pitfalls that international businesses encounter in South Korea."
             }
           </p>
           <p className={styles.para_wrapper}>
             {
-              "Doing it alone can be tricky—picking the wrong business structure might lead to extra taxes, and missing deadlines can result in annoying fines. To help you get it right, this guide breaks down the different ways to set up your business, explains the registration steps, covers your ongoing responsibilities, and points out the common mistakes to avoid."
+              "Doing it alone can be tricky. Picking the wrong business structure might lead to extra taxes, and missing deadlines can result in annoying fines. To help you get it right, this guide breaks down the different ways to set up your business, explains the registration steps, covers your ongoing responsibilities, and points out the common mistakes to avoid."
             }
-          </p>
-          
-          <p className={styles.para_wrapper}>
-            {
-              "How about we look into the specific registration steps for setting up a branch versus a local corporation?"
-            }
-          </p>          
+          </p>       
           <p className={`${styles.para_wrapper} ${styles.para_accent}`}>
             {
               "Legal forms for your business"
@@ -73,50 +71,44 @@ export default function Areas () {
           </p>
           <p className={styles.para_wrapper}>
             {
-"Here’s a quick look at the main steps:"
+              "Here’s a quick look at the main steps:"
             }
           </p>
           <p className={styles.para_wrapper}>
             {
-"Drafting the Rules: You'll create and notarize your \"Articles of Incorporation\" (the company’s rulebook)."
-            }
-          </p>
-
-          <p className={styles.para_wrapper}>
-            {
-"Funding: You’ll deposit your starting capital into a local bank to get a deposit certificate."
-            }
-          </p>
-          <p className={styles.para_wrapper}>
-            {
-"The Court Filing: You officially file your application with the local District Court Registry."
+              "Drafting the Rules: You'll create and notarize your \"Articles of Incorporation\" (the company’s rulebook)."
             }
           </p>
 
           <p className={styles.para_wrapper}>
             {
-"Tax Setup: Within 20 days of starting, you need to register with the National Tax Service to get your business number."
+              "Funding: You’ll deposit your starting capital into a local bank to get a deposit certificate."
             }
           </p>
           <p className={styles.para_wrapper}>
             {
-"Local Licenses: Depending on what you do, you might need extra permits from the local government."
+              "The Court Filing: You officially file your application with the local District Court Registry."
             }
           </p>
           <p className={styles.para_wrapper}>
             {
-"While the law technically doesn't require a huge amount of starting money, banks and officials like to see a balance that matches your business goals. A big tip: if you invest $100,000 USD or more, you fall under the Foreign Investment Promotion Act. This is great because it gives you access to KOTRA’s \"one-stop service\" and potential tax breaks!"
+              "Tax Setup: Within 20 days of starting, you need to register with the National Tax Service to get your business number."
             }
           </p>
           <p className={styles.para_wrapper}>
             {
-"While the law technically doesn't require a huge amount of starting money, banks and officials like to see a balance that matches your business goals. A big tip: if you invest $100,000 USD or more, you fall under the Foreign Investment Promotion Act. This is great because it gives you access to KOTRA’s \"one-stop service\" and potential tax breaks!"
+              "Local Licenses: Depending on what you do, you might need extra permits from the local government."
+            }
+          </p>
+          <p className={styles.para_wrapper}>
+            {
+              "While the law technically doesn't require a huge amount of starting money, banks and officials like to see a balance that matches your business goals. A big tip: if you invest $100,000 USD or more, you fall under the Foreign Investment Promotion Act. This is great because it gives you access to KOTRA’s \"one-stop service\" and potential tax breaks."
             }
           </p>
 
           <p className={styles.para_wrapper}>
             {
-"Keep in mind there are costs involved, like notary fees and court charges, which scale with your capital. You’ll also need to budget for legal fees, plus translation and document certification (apostille) costs since you're bringing in foreign paperwork."
+              "Keep in mind there are costs involved, like notary fees and court charges, which scale with your capital. You’ll also need to budget for legal fees, plus translation and document certification (apostille) costs since you're bringing in foreign paperwork."
             }
           </p>
         </div>
@@ -147,27 +139,27 @@ export default function Areas () {
           </p>
           <p className={styles.para_wrapper}>
             {
-"Think of the Foreign Investment Promotion Act (FIPA) as the main rulebook for bringing money into South Korea. One of the most important steps is the Foreign Investment Notification. You need to file this with a bank or KOTRA before or during the time you send your funds. It’s not just a formality—if you skip it, your investment might lose its legal protection under the law!"
+              "Think of the Foreign Exchange Management Act (FEMA) as the main rulebook for bringing money into South Korea. One of the most important steps is the Foreign Investment Notification. You need to file this with a bank or KOTRA before or during the time you send your funds. It’s not just a formality — if you skip it, your investment might lose its legal protection under the law."
             }
           </p>
           <p className={styles.para_wrapper}>
             {
-"While Korea is very open, some areas have \"Keep Out\" or \"Proceed with Caution\" signs."
+              "While Korea is very open, some areas have \"Keep Out\" or \"Proceed with Caution\" signs."
             }
           </p>
           <p className={styles.para_wrapper}>
             {
-"Restricted Areas: Sectors like broadcasting, telecommunications, aviation, and some financial services have limits on how much a foreigner can own."
+              "Restricted Areas: Sectors like broadcasting, telecommunications, aviation, and some financial services have limits on how much a foreigner can own."
             }
           </p>
           <p className={styles.para_wrapper}>
             {
-"Approval is Key: If you’re eyeing a restricted sector, you can’t just start a company. You need a thumbs-up from the government first, which can take a few months. Starting without this approval is a major risk—the government could actually shut your company down later."
+              "Approval is Key: If you’re eyeing a restricted sector, you can’t just start a company. You need a thumbs-up from the government first, which can take a few months. Starting without this approval is a major risk—the government could actually shut your company down later."
             }
           </p>
           <p className={styles.para_wrapper}>
             {
-"Pro-tip: Don't forget about Investment Treaties. Korea has special deals with many countries that offer extra protection and ways to settle disputes. Checking if your home country has one of these treaties can give you a big advantage."
+              "Pro-tip: Don't forget about Investment Treaties. Korea has special deals with many countries that offer extra protection and ways to settle disputes. Checking if your home country has one of these treaties can give you a big advantage."
             }
           </p>
         </div>

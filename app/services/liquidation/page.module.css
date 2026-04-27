@@ -26,7 +26,8 @@
  margin-bottom: 24px;
 }
 .para_wrapper {
- word-break: break-all;
+ /* word-break: break-all; */
+ word-break: keep-all;
  word-wrap: normal;
  white-space: normal;
  padding: 8px;
