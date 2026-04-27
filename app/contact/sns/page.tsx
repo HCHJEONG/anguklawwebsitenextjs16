@@ -27,11 +27,11 @@ export default function Page() {
     </a>
     <a href="https://wa.me/821027743211" target="_blank" className="flex h-[48px] grow items-center justify-start gap-2 rounded-md bg-gray-50 p-3 text-sm font-medium hover:bg-sky-100 hover:text-blue-600 md:flex-none md:justify-start md:p-2 md:px-3">
       <ChatBubbleBottomCenterTextIcon className="w-6" style={{color: 'darkcyan'}}/>
-      <p>Whatsapp</p>
+      <h1>Whatsapp</h1>
     </a>
     <a href="https://open.kakao.com/me/anguky" target="_blank" className="flex h-[48px] grow items-center justify-start gap-2 rounded-md bg-gray-50 p-3 text-sm font-medium hover:bg-sky-100 hover:text-blue-600 md:flex-none md:justify-start md:p-2 md:px-3">
       <ChatBubbleLeftEllipsisIcon className="w-6" style={{color: 'burlywood'}}/>
-      <p>KakaoTalk</p>
+      <h1>KakaoTalk</h1>
     </a>
   </div>);
 }

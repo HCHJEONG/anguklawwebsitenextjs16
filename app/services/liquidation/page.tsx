@@ -17,11 +17,11 @@ export default function Areas () {
               priority
             />
           </div>
-          <p className={`${styles.para_wrapper} ${styles.para_accent}`}>
+          <h1 className={`${styles.para_wrapper} ${styles.para_accent}`}>
             {
               "Company Liquidation in South Korea "
             }
-          </p>
+          </h1>
           <p className={styles.para_wrapper}>
             {
               "When it comes to the legal side of business in South Korea, two big laws call the shots: the Commercial Act (for starting and running a company) and the Debtor Rehabilitation Act (for handling financial trouble or closing down). Together, they set the ground rules for everyone involved, from the owners to the creditors."
@@ -69,11 +69,11 @@ export default function Areas () {
               priority
             />
           </div>
-          <p className={`${styles.para_wrapper} ${styles.para_accent}`}>
+          <h1 className={`${styles.para_wrapper} ${styles.para_accent}`}>
             {
               "Voluntary dissolution and liquidation"
             }
-          </p>
+          </h1>
           <p className={styles.para_wrapper}>
             {
               "If your company is in good financial shape and everyone agrees it’s time to move on, Voluntary Dissolution is the smoothest way to exit. It follows a step-by-step process set out in the Commercial Act."
@@ -147,9 +147,9 @@ export default function Areas () {
             </a> 
             {"이란 서비스를 제공하고 있습니다. "}
           </p> */}
-          <p className={`${styles.para_wrapper} ${styles.para_accent}`}>
+          <h1 className={`${styles.para_wrapper} ${styles.para_accent}`}>
             {"Rehabilitation proceedings: the Korean Chapter 11 "}
-          </p>
+          </h1>
           <p className={styles.para_wrapper}>
             {"When a company is running out of money or is about to go broke but still has a solid business model, they can look into \"rehabilitation proceedings\" (Hoesaeng Jeolcha) under the DRBA. This is basically a court-guided makeover for the business instead of just shutting everything down. Think of it as the Korean version of Chapter 11 in the U.S. or administration in the U.K."} 
           </p>

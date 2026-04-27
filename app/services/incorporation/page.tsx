@@ -17,11 +17,11 @@ export default function Areas () {
               priority
             />
           </div>
-          <p className={`${styles.para_wrapper} ${styles.para_accent}`}>
+          <h1 className={`${styles.para_wrapper} ${styles.para_accent}`}>
             {
               "Company Registration in South Korea "
             }
-          </p>
+          </h1>
           <p className={styles.para_wrapper}>
             {
               "South Korea is a fantastic place for international investors, offering a reliable, high-tech business world with clear rules and a very solid legal system. However, getting set up means dealing with a few big laws, like the Commercial Act and the Foreign Investment Promotion Act, along with various tax and hiring rules. "
@@ -36,11 +36,11 @@ export default function Areas () {
               "Doing it alone can be tricky. Picking the wrong business structure might lead to extra taxes, and missing deadlines can result in annoying fines. To help you get it right, this guide breaks down the different ways to set up your business, explains the registration steps, covers your ongoing responsibilities, and points out the common mistakes to avoid."
             }
           </p>       
-          <p className={`${styles.para_wrapper} ${styles.para_accent}`}>
+          <h1 className={`${styles.para_wrapper} ${styles.para_accent}`}>
             {
               "Legal forms for your business"
             }
-          </p>
+          </h1>
           <p className={styles.para_wrapper}>
             {
               "Foreign investors in South Korea typically choose between the Jusik Hoesa (joint-stock company), Yuhan Hoesa (LLC), and a branch office. The Jusik Hoesa is the standard for larger operations, allowing public shares, while the Yuhan Hoesa offers more privacy for smaller ventures. While branches are faster to establish, they do not create a separate legal entity, leaving the parent company directly liable. Local partners and banks generally prefer the stability of a locally incorporated entity over a branch, which is often chosen just for convenience."
@@ -59,11 +59,11 @@ export default function Areas () {
             />
           </div>
 
-          <p className={`${styles.para_wrapper} ${styles.para_accent}`}>
+          <h1 className={`${styles.para_wrapper} ${styles.para_accent}`}>
             {
               "Registration steps, timelines and costs"
             }
-          </p>
+          </h1>
           <p className={styles.para_wrapper}>
             {
               "Setting up a Jusik Hoesa or Yuhan Hoesa follows a clear path under Korean law, usually taking about three to six weeks from the time you start your paperwork until you get your official corporate registration certificate."
@@ -134,9 +134,9 @@ export default function Areas () {
             </a> 
             {"이란 서비스를 제공하고 있습니다. "}
           </p> */}
-          <p className={`${styles.para_wrapper} ${styles.para_accent}`}>
+          <h1 className={`${styles.para_wrapper} ${styles.para_accent}`}>
             {"Foreign investment rules and sector restrictions"}
-          </p>
+          </h1>
           <p className={styles.para_wrapper}>
             {
               "Think of the Foreign Exchange Management Act (FEMA) as the main rulebook for bringing money into South Korea. One of the most important steps is the Foreign Investment Notification. You need to file this with a bank or KOTRA before or during the time you send your funds. It’s not just a formality — if you skip it, your investment might lose its legal protection under the law."

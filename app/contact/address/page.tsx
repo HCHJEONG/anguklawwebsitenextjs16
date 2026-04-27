@@ -17,9 +17,9 @@ export default function Page() {
         </div>
       </div>
       <div className={styles.contact_wrapper}>
-        <p className={`${styles.para_wrapper} ${styles.para_accent}`}>
+        <h1 className={`${styles.para_wrapper} ${styles.para_accent}`}>
           {("ADDRESS:"+" Chamber 304, 7, Yulgok-ro 2-gil, Jongno-gu, Seoul, Republic of Korea, 03143")}
-        </p>
+        </h1>
         <p className={`${styles.para_wrapper} ${styles.para_accent}`}>
           {("TEL:"+" +82-2-3210-3330"+" EMAIL: hcjeong@anguklaw.com"+" WHATSAPP:"+" +82-10-2774-3211")}
         </p>

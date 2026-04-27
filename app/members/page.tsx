@@ -17,10 +17,10 @@ export default function About () {
               priority
             />
           </div>
-          <p className={styles.para_wrapper}>
+          <h1 className={styles.para_wrapper}>
             {
               'Anguk Law Offices treats every single case with the utmost care. This is because each case holds our clients\' concerns and values, and we truly cherish what matters most to them.'   }
-          </p>
+          </h1>
           
           <p className={styles.para_wrapper}>
             {
@@ -45,11 +45,11 @@ export default function About () {
               priority
             />
           </div>
-          <p className={styles.para_wrapper}>
+          <h1 className={styles.para_wrapper}>
             {
               "We delve deep into the details of every case. Because every legal matter carries its own history, clear organization is essential to uncovering the truth and ensuring the right outcome."
             }
-          </p>
+          </h1>
           <p className={styles.para_wrapper}>
             {
               "Anguk Law Offices acts with speed, yet without rushing. We prioritize consulting with our clients on the order of business, starting first with a deep understanding of your voice and intended message. Our foundation is built on our clients' goals and understanding rather than mere legal expertise. Handling a case without the client's comprehension is, in our view, akin to conducting a surgical procedure without consent—regardless of the intended benefit."  
@@ -67,21 +67,21 @@ export default function About () {
               priority
             />
           </div>
-          <p className={styles.para_wrapper}>
+          <h2 className={styles.para_wrapper}>
             {"Are you suffering from an unfair disadvantage because a state institution failed to act justly?"}
-          </p>
+          </h2>
           <p className={styles.para_wrapper}>
             { "We cordially invite you to Anguk Law Offices."}
           </p>
-          <p className={styles.para_wrapper}>
+          <h2 className={styles.para_wrapper}>
             {"Have you been victimized by the bad faith and deceptive conduct of another party?"}
-          </p>
+          </h2>
           <p className={styles.para_wrapper}>
             { "We cordially invite you to Anguk Law Offices."}
           </p>
-          <p className={styles.para_wrapper}>
+          <h2 className={styles.para_wrapper}>
             {"Are tedious procedures becoming a barrier to achieving your goals?"}
-          </p>
+          </h2>
           <p className={`${styles.para_wrapper} ${styles.para_accent}`}>
             { "We cordially invite you to Anguk Law Offices."}
           </p>

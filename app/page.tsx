@@ -34,7 +34,7 @@ export default function Page() {
             className="relative w-0 h-0 border-l-[15px] border-r-[15px] border-b-[26px] border-l-transparent border-r-transparent border-b-black"
           /> */}
           {/* <p className={`text-xl text-gray-800 md:text-3xl md:leading-normal`}> */}
-          <p
+          <h1
             className={`${lusitana.className} text-xl text-gray-800 md:text-3xl md:leading-normal`}
           > 
             <strong>Welcome to Anguk Law Offices.</strong> <br/><br/>
@@ -44,7 +44,7 @@ export default function Page() {
               Penvot.com
             </a>
              is our proud library. */}
-          </p>
+          </h1>
           <Link
             href="/services"
             className="flex items-center gap-5 self-start rounded-lg bg-blue-500 px-6 py-3 text-sm font-medium text-white transition-colors hover:bg-blue-400 md:text-base"

@@ -20,9 +20,10 @@ export default function Members () {
           
         </div>
         <div className={styles.members_content_column}> 
-          <p className={styles.para_accent}>
+          <h1 className={styles.para_accent}>
             {'Representative Attorney'}
-          </p><p className={styles.para_accent}>
+          </h1>
+          <p className={styles.para_accent}>
             {'Mr. Heechan Jeong'}
           </p>
           <p className={styles.para_wrapper}>
@@ -66,9 +67,9 @@ export default function Members () {
               {'Course: Civil Law'}
             </span>
           </p>
-          <p className={styles.para_wrapper}>
-            {'Anguk Law Offices Representative Attorney'}
-          </p>
+          <h1 className={styles.para_wrapper}>
+            {'Representative Attorney of Anguk Law Offices'}
+          </h1>
         </div>
       </div>
     </div>
