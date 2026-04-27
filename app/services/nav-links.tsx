@@ -13,7 +13,10 @@ const links = [
     href: '/services/incorporation',
     icon: UserGroupIcon,
   },
-  { name: 'Liquidation', href: '/services/liquidation', icon: DocumentDuplicateIcon },
+  { name: 'Liquidation', 
+    href: '/services/liquidation', 
+    icon: DocumentDuplicateIcon 
+  },
 ];
 
 export default function NavLinks() {
