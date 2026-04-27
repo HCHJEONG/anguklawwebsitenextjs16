@@ -9,6 +9,9 @@ export const metadata: Metadata = {
   },
   description: 'Anguk Law Offices is a leading Korean law firm for foreign investors.',
   metadataBase: new URL('https://anguklaw.com'),
+  verification: {
+    google: 'yKchDXRInqhr-Vtf12s6rmPY5bTTZ5WaUn1x9M993YQ', 
+  },
 };
 
 export default function RootLayout({
