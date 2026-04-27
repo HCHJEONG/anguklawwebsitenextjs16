@@ -11,13 +11,13 @@ const links = [
   {
     name: 'Attorneys',
     href: '/members/attorneys',
-    icon: DocumentMagnifyingGlassIcon,
+    icon: FaceSmileIcon,
   },
   { 
     name: 'Consultants', 
     href: '/members/', 
     // href: '/', 
-    icon: FaceSmileIcon 
+    icon: DocumentMagnifyingGlassIcon
   },
 ];
 

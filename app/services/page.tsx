@@ -19,7 +19,7 @@ export default function Areas () {
           </div>
           <p className={`${styles.para_wrapper} ${styles.para_accent}`}>
             {
-              "International Trade Litigation and Family Law"
+              "International Litigation and Advisory"
             }
           </p>
           <p className={styles.para_wrapper}>
@@ -29,7 +29,12 @@ export default function Areas () {
           </p>
           <p className={styles.para_wrapper}>
             {
-              "International Trade Litigation and Advisory"
+              "International Trade Litigation"
+            }
+          </p>
+          <p className={styles.para_wrapper}>
+            {
+              "International Trade Law Advisory and Due Diligence"
             }
           </p>
           <p className={styles.para_wrapper}>
