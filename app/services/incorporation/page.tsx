@@ -1,5 +1,13 @@
 import Image from 'next/image';
 import styles from './page.module.css';
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Company Establishment | Anguk Law Offices',
+  description: 'Anguk Law Offices is a leading Korean law firm for foreign investors.',
+  metadataBase: new URL('https://anguklaw.com/services/incorporation'),
+};
+
 
 export default function Areas () {
   return (
