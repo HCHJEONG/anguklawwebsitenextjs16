@@ -11,6 +11,10 @@ export const metadata: Metadata = {
   metadataBase: new URL('https://anguklaw.com'),
   verification: {
     google: 'yKchDXRInqhr-Vtf12s6rmPY5bTTZ5WaUn1x9M993YQ', 
+    // naver: '18e4f197ceff293f0d289c7d5df2187ac91f385b',
+    other: {
+      'naver-site-verification': ['18e4f197ceff293f0d289c7d5df2187ac91f385b'],
+    },
   },
 };
 
