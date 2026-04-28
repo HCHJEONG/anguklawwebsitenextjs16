@@ -9,7 +9,13 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   output: 'standalone',
-  transpilePackages: ["three"],
+  transpilePackages: ["three", "react-markdown", "remark-gfm", "rehype-highlight"],
+   
+  // Next.js 16의 새로운 캐시 기능을 사용한다면 관련 설정 확인
+  experimental: {
+    cacheComponents: true,
+  },
+
   typescript: {
     // !! WARN !!
     // Dangerously allow production builds to successfully complete even if

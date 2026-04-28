@@ -10,7 +10,7 @@ export async function createNote(formData: FormData): Promise<void> {
   const result = queries.insert.run(title, content);
   const id = Number(result.lastInsertRowid);
   revalidatePath("/");
-  redirect(`/notes/${id}`);
+  redirect(`/articles/${id}`);
 }
 
 export async function updateNote(id: number, formData: FormData): Promise<void> {
@@ -18,8 +18,8 @@ export async function updateNote(id: number, formData: FormData): Promise<void> 
   const content = String(formData.get("content") ?? "");
   queries.update.run(title, content, Date.now(), id);
   revalidatePath("/");
-  revalidatePath(`/notes/${id}`);
-  redirect(`/notes/${id}`);
+  revalidatePath(`/articles/${id}`);
+  redirect(`/articles/${id}`);
 }
 
 export async function deleteNote(id: number): Promise<void> {
