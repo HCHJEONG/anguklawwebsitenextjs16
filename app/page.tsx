@@ -35,11 +35,11 @@ export default function Page() {
           /> */}
           {/* <p className={`text-xl text-gray-800 md:text-3xl md:leading-normal`}> */}
           <h1
-            className={`${lusitana.className} text-xl text-gray-800 md:text-3xl md:leading-normal`}
+            className={`${lusitana.className} text-lg text-gray-800 md:text-2xl md:leading-normal`}
           > 
             <strong>Welcome to Anguk Law Offices.</strong> <br/><br/>
-            Anguk Law Offices is a leading Korean 
-            law firm for foreign investors.{' '}
+            Anguk Law Offices has been a leading Korean 
+            law firm for foreign investors for more than two decades.{' '}
             {/* <a href="https://penvot.com/" className="text-blue-500">
               Penvot.com
             </a>
