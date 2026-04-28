@@ -35,7 +35,7 @@ export default function Articles () {
 
       {notes.length === 0 ? (
         <div className="empty">
-          <p style={{ marginTop: 0 }}>You don&apos;t have any articles yet.</p>
+          <p style={{ marginTop: 0 }}>You don&apos;t have any article yet.</p>
           <Link href="/articles/new" className="btn primary">
             Create your first article
           </Link>
