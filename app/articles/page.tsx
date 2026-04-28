@@ -21,13 +21,13 @@ function previewText(md: string): string {
     .trim();
 }
 
-export default function HomePage() {
+export default function Articles () {
   const notes = queries.list.all();
 
   return (
     <>
       <div className="page-header">
-        <h1>Your notes</h1>
+        <h1>Your articles</h1>
         <span style={{ color: "var(--muted)", fontSize: 13 }}>
           {notes.length} {notes.length === 1 ? "note" : "notes"}
         </span>
@@ -37,7 +37,7 @@ export default function HomePage() {
         <div className="empty">
           <p style={{ marginTop: 0 }}>You don&apos;t have any notes yet.</p>
           <Link href="/notes/new" className="btn primary">
-            Create your first note
+            Create your first article
           </Link>
         </div>
       ) : (

@@ -22,13 +22,13 @@ export default async function EditNotePage({
   return (
     <>
       <div className="page-header">
-        <h1>Edit note</h1>
+        <h1>Edit article</h1>
       </div>
       <Editor
         initialTitle={note.title}
         initialContent={note.content}
         submitLabel="Save changes"
-        cancelHref={`/notes/${note.id}`}
+        cancelHref={`/articles/${note.id}`}
         action={boundUpdate}
       />
     </>

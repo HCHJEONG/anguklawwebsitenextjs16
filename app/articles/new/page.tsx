@@ -4,10 +4,10 @@ export default function NewNotePage() {
   return (
     <>
       <div className="page-header">
-        <h1>New note</h1>
+        <h1>New article</h1>
       </div>
       <Editor
-        submitLabel="Create note"
+        submitLabel="Create article"
         cancelHref="/"
         action={createNote}
       />
