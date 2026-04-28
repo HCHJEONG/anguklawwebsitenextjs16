@@ -24,11 +24,12 @@ COPY --from=builder /app/public ./public
 COPY --from=builder --chown=nextjs:nodejs /app/.next/standalone ./
 COPY --from=builder --chown=nextjs:nodejs /app/.next/static ./.next/static
 
+COPY --from=builder /app/data ./data
+# Define a persistent volume at real machine for the SQLite file
+VOLUME /data
+
 USER nextjs
 EXPOSE 3000
-
-# Define a persistent volume for the SQLite file
-VOLUME /app/data
 
 ENV TZ=Asia/Seoul
 ENV PORT=3000
