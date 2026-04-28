@@ -29,21 +29,21 @@ export default function Articles () {
       <div className="page-header">
         <h1>Your articles</h1>
         <span style={{ color: "var(--muted)", fontSize: 13 }}>
-          {notes.length} {notes.length === 1 ? "note" : "notes"}
+          {notes.length} {notes.length === 1 ? "article" : "articles"}
         </span>
       </div>
 
       {notes.length === 0 ? (
         <div className="empty">
           <p style={{ marginTop: 0 }}>You don&apos;t have any notes yet.</p>
-          <Link href="/notes/new" className="btn primary">
+          <Link href="/articles/new" className="btn primary">
             Create your first article
           </Link>
         </div>
       ) : (
         <div className="notes-grid">
           {notes.map((note) => (
-            <Link key={note.id} href={`/notes/${note.id}`} className="note-card">
+            <Link key={note.id} href={`/articles/${note.id}`} className="note-card">
               <h3 className="title">{note.title || "Untitled"}</h3>
               <p className="preview">
                 {previewText(note.content) || "No content yet"}

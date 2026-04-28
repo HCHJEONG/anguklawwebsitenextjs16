@@ -31,11 +31,7 @@ export default async function NotePage({
   return (
     <>
       <div className="page-header">
-        <Link href="/" className="btn">← All articles</Link>
-        <div style={{ display: "flex", gap: 8 }}>
-          <Link href={`/articles/${note.id}/edit`} className="btn primary">Edit</Link>
-          <DeleteButton action={boundDelete} />
-        </div>
+        <Link href="/articles" className="btn">← All articles</Link>
       </div>
 
       <h1 className="viewer-title">{note.title || "Untitled"}</h1>

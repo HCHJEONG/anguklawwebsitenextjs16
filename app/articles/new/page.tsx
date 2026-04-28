@@ -8,7 +8,7 @@ export default function NewNotePage() {
       </div>
       <Editor
         submitLabel="Create article"
-        cancelHref="/"
+        cancelHref="/articles"
         action={createNote}
       />
     </>
