@@ -27,7 +27,7 @@ export default function Articles () {
   return (
     <>
       <div className="page-header">
-        <h1>Your articles</h1>
+        <h1>Insights from Anguk Law Offices</h1>
         <span style={{ color: "var(--muted)", fontSize: 13 }}>
           {notes.length} {notes.length === 1 ? "article" : "articles"}
         </span>

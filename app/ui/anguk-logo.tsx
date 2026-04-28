@@ -8,7 +8,7 @@ export default function AcmeLogo() {
     >
       <p className="text-[20px] block md:hidden">Anguk Law Offices</p>
       <p className="text-[44px] hidden md:block">Anguk Law Offices</p>
-      <GlobeAltIcon className="h-12 w-12 rotate-[15deg]" />
+      {/* <GlobeAltIcon className="h-12 w-12 rotate-[15deg]" /> */}
     </div>
   );
 }
