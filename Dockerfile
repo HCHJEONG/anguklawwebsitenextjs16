@@ -18,15 +18,19 @@ FROM base AS runner
 WORKDIR /app
 ENV NODE_ENV=production
 
+# Create the data directory and set permissions BEFORE defining the VOLUME
+RUN mkdir -p /app/data && chown nextjs:nodejs /app/data
+VOLUME /app/data
+
 RUN addgroup --system --gid 1001 nodejs
 RUN adduser --system --uid 1001 nextjs
 COPY --from=builder /app/public ./public
 COPY --from=builder --chown=nextjs:nodejs /app/.next/standalone ./
 COPY --from=builder --chown=nextjs:nodejs /app/.next/static ./.next/static
 
-COPY --from=builder /app/data ./data
-# Define a persistent volume at real machine for the SQLite file
-VOLUME /data
+# If you have initial data, copy it, but be careful with volume mounting
+# Overwriting a volume mount with COPY often doesn't work as expected if the volume is already mapped
+COPY --from=builder --chown=nextjs:nodejs /app/data ./data
 
 USER nextjs
 EXPOSE 3000
