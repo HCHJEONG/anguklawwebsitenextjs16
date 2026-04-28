@@ -2,7 +2,7 @@
 
 import { redirect } from "next/navigation";
 import { revalidatePath } from "next/cache";
-import { queries } from " ./db";
+import { queries } from "./db";
 
 export async function createNote(formData: FormData): Promise<void> {
   const title = String(formData.get("title") ?? "").trim() || "Untitled";

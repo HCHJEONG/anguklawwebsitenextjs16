@@ -22,9 +22,9 @@ input[type='number']::-webkit-outer-spin-button {
 
 :root {
   /* --bg: #0b0d10; */
-  --panel: #14171c;
+  /* --panel: #14171c;
   --panel-2: #1a1e25;
-  --border: #262b33;
+  --border: #262b33; */
   /* --text: #e6e8eb; */
   --muted: #8a93a0;
   /* --accent: #7c9cff; */
@@ -153,6 +153,7 @@ button, input, textarea {
   margin: 0 0 6px;
   display: -webkit-box;
   -webkit-line-clamp: 1;
+  line-clamp: 1;
   -webkit-box-orient: vertical;
   overflow: hidden;
 }
@@ -161,6 +162,7 @@ button, input, textarea {
   font-size: 13px;
   display: -webkit-box;
   -webkit-line-clamp: 3;
+  line-clamp: 3;
   -webkit-box-orient: vertical;
   overflow: hidden;
   white-space: pre-wrap;

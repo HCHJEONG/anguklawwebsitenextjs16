@@ -40,7 +40,8 @@
   "pnpm": {
     "onlyBuiltDependencies": [
       "bcrypt",
-      "sharp"
+      "sharp",
+      "better-sqlite3"
     ]
   }
 }
