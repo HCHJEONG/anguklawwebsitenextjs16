@@ -17,6 +17,21 @@ const nextConfig = {
     // !! WARN !!
     ignoreBuildErrors: true,
   },
+  
+  reactStrictMode: true,
+  allowedDevOrigins: ["*"],
+  serverExternalPackages: ["better-sqlite3"],
+  async headers() {
+    if (process.env.NODE_ENV === "production") return [];
+    return [
+      {
+        source: "/:path*",
+        headers: [
+          { key: "Cache-Control", value: "no-store, must-revalidate" },
+        ],
+      },
+    ];
+  },
 };
 
 export default nextConfig;
