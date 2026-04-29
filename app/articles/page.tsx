@@ -21,8 +21,17 @@ function previewText(md: string): string {
     .trim();
 }
 
-export default function Articles () {
-  const notes = queries.list.all();
+export default async function Articles (props: {
+  searchParams?: Promise<{
+    query?: string;
+  }>;
+}) {
+  const searchParams = await props.searchParams;
+  const query = searchParams?.query || '';
+  console.log('query: ', query);
+  const notes = query === '' 
+    ? queries.list.all() 
+    : queries.search.all({ term: query });
 
   return (
     <>
