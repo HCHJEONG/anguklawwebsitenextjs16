@@ -15,7 +15,7 @@ declare global {
 }
 
 function createDb(): Database.Database {
-  const db = new Database(dbPath);
+  const db = new Database(dbPath, { timeout: 5000 });
   db.pragma("journal_mode = WAL");
   db.exec(`
     CREATE TABLE IF NOT EXISTS notes (
