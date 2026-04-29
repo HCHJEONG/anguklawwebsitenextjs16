@@ -1,6 +1,7 @@
 import '@/app/ui/global.css';
 import { inter } from '@/app/ui/fonts';
 import { Metadata } from 'next';
+import SignIn from '@/components/sign-in';
  
 export const metadata: Metadata = {
   title: {
@@ -37,6 +38,7 @@ export default function RootLayout({
             <a href="#" className="hover:text-black">Privacy</a>
             <a href="#" className="hover:text-black">Contact</a>
           </div> */}
+          <SignIn />
         </footer>
       </body>
     </html>
