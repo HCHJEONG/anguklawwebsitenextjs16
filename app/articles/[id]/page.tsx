@@ -3,7 +3,6 @@ import { notFound } from "next/navigation";
 import { queries } from "@/lib/db";
 import { deleteNote } from "@/lib/actions";
 import { MarkdownPreview } from "@/components/MarkdownPreview";
-// import { DeleteButton } from "@/components/DeleteButton";
 
 export const dynamic = "force-dynamic";
 
@@ -25,8 +24,6 @@ export default async function NotePage({
 
   const note = queries.get.get(noteId);
   if (!note) notFound();
-
-  const boundDelete = deleteNote.bind(null, note.id);
 
   return (
     <>
