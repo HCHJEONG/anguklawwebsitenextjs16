@@ -22,7 +22,8 @@ export default async function EditNotePage({
   const note = queries.get.get(noteId);
   if (!note) notFound();
 
-  const boundUpdate = updateNote.bind(null, note.id);    
+  const boundUpdate = updateNote.bind(null, note.id);  
+  
 
   return (
     <>
