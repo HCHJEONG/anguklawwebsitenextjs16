@@ -6,7 +6,6 @@ WORKDIR /app
 
 COPY package.json pnpm-lock.yaml* ./
 RUN pnpm install --frozen-lockfile
-COPY ./.env.local ./.env.local
 
 FROM base AS builder
 WORKDIR /app
