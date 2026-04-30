@@ -5,8 +5,6 @@ import Link from "next/link";
 import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
 import rehypeHighlight from "rehype-highlight";
-import { deleteNote } from "@/lib/actions";
-import { DeleteButton } from "@/components/DeleteButton";
 
 type EditorProps = {
   initialTitle?: string;
@@ -14,7 +12,6 @@ type EditorProps = {
   submitLabel: string;
   cancelHref: string;
   action: (formData: FormData) => Promise<void>;
-  noteId: number;
 };
 
 const STARTER_TEMPLATE = `# Heading
@@ -38,12 +35,10 @@ export function Editor({
   submitLabel,
   cancelHref,
   action,
-  noteId,
 }: EditorProps) {
   const [title, setTitle] = useState(initialTitle);
   const [content, setContent] = useState(initialContent || STARTER_TEMPLATE);
   const [isPending, startTransition] = useTransition();
-  const boundDelete = deleteNote.bind(null, noteId);
 
   function handleSubmit(formData: FormData) {
     formData.set("title", title);
@@ -72,10 +67,6 @@ export function Editor({
         <button type="submit" className="btn primary" disabled={isPending}>
           {isPending ? "Saving..." : submitLabel}
         </button>
-        {/* <button type="button" onClick={()=>boundDelete()} className="btn primary" disabled={isPending}>
-          "Delete"
-        </button> */}
-        <DeleteButton action={boundDelete}/>
       </div>
 
       <div className="editor-grid">

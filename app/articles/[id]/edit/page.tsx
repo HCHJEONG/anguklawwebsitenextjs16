@@ -1,12 +1,12 @@
 import { notFound } from "next/navigation";
 import { queries } from "@/lib/db";
-import { updateNote} from "@/lib/actions";
+import { updateNote } from "@/lib/actions";
 import { Editor } from "@/components/Editor";
 // import { auth } from "@/auth.mjs";
 
 export const dynamic = "force-dynamic";
 
-export default async function EditArticlePage ({
+export default async function EditNotePage({
   params,
 }: {
   params: Promise<{ id: string }>;
@@ -36,7 +36,6 @@ export default async function EditArticlePage ({
         submitLabel="Save changes"
         cancelHref={`/articles/${note.id}`}
         action={boundUpdate}
-        noteId={note.id}
       />
     </>
   );

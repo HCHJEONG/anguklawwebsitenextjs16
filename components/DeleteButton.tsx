@@ -2,7 +2,7 @@
 
 import { useTransition } from "react";
 
-export function DeleteButton ({
+export function DeleteButton({
   action,
 }: {
   action: () => Promise<void>;
@@ -14,7 +14,7 @@ export function DeleteButton ({
       className="btn danger"
       disabled={isPending}
       onClick={() => {
-        if (!confirm("Delete this article? This cannot be undone.")) return;
+        if (!confirm("Delete this note? This cannot be undone.")) return;
         startTransition(() => {
           void action();
         });
