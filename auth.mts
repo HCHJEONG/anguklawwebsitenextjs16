@@ -2,7 +2,7 @@ import NextAuth from "next-auth"
 import { authConfig } from './auth.config.mjs';
 import { DrizzleAdapter } from "@auth/drizzle-adapter";
 import { drizzle } from "drizzle-orm/better-sqlite3";
-import { usersdb } from "@/lib/userdb.js";
+import { usersdb } from "@/lib/usersdb.js";
  
 const drizzleDb = drizzle(usersdb);
 
