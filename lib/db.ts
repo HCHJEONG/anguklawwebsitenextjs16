@@ -58,9 +58,9 @@ export const queries = {
   ),
   remove: db.prepare<[number]>(`DELETE FROM notes WHERE id = ?`),
   search: db.prepare<{ term: string }, Note>(
-  `SELECT id, title, content, created_at, updated_at 
-   FROM notes 
-   WHERE title LIKE '%' || :term || '%' OR content LIKE '%' || :term || '%'
-   ORDER BY updated_at DESC`
-),
+    `SELECT id, title, content, created_at, updated_at 
+    FROM notes 
+    WHERE title LIKE '%' || :term || '%' OR content LIKE '%' || :term || '%'
+    ORDER BY updated_at DESC`
+  ),
 };

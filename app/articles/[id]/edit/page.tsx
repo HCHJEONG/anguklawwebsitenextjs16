@@ -2,6 +2,7 @@ import { notFound } from "next/navigation";
 import { queries } from "@/lib/db";
 import { updateNote} from "@/lib/actions";
 import { Editor } from "@/components/Editor";
+// import { auth } from "@/auth.mjs";
 
 export const dynamic = "force-dynamic";
 
@@ -10,6 +11,10 @@ export default async function EditArticlePage ({
 }: {
   params: Promise<{ id: string }>;
 }) {
+
+  // const session = await auth()
+  // if (!session?.user) return <div>Not authenticated</div>
+  
   const { id } = await params;
   const noteId = Number(id);
   if (!Number.isInteger(noteId)) notFound();
@@ -18,6 +23,7 @@ export default async function EditArticlePage ({
   if (!note) notFound();
 
   const boundUpdate = updateNote.bind(null, note.id);  
+  
 
   return (
     <>

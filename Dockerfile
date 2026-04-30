@@ -31,6 +31,8 @@ COPY --from=builder /app/public ./public
 COPY --from=builder --chown=nextjs:nodejs /app/.next/standalone ./
 COPY --from=builder --chown=nextjs:nodejs /app/.next/static ./.next/static
 
+COPY ./.env.local ./.env.local
+
 # If you have initial data, copy it, but be careful with volume mounting
 # Overwriting a volume mount with COPY often doesn't work as expected if the volume is already mapped
 COPY --from=builder --chown=nextjs:nodejs /app/data ./data

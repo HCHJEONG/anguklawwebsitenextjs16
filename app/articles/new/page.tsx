@@ -1,6 +1,12 @@
 import { Editor } from "@/components/Editor";
 import { createNote } from "@/lib/actions";
-export default function NewNotePage() {
+// import { auth } from "@/auth.mjs";
+
+export default async function NewNotePage() {
+
+  // const session = await auth()
+  // if (!session?.user) return <div>Not authenticated</div>
+
   return (
     <>
       <div className="page-header">
@@ -10,6 +16,7 @@ export default function NewNotePage() {
         submitLabel="Create article"
         cancelHref="/articles"
         action={createNote}
+        noteId={0}
       />
     </>
   );

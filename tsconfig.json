@@ -36,8 +36,12 @@
     ".next/types/**/*.ts",
     "app/lib/placeholder-data.ts",
     "scripts/seed.js",
-    ".next/dev/types/**/*.ts"
-, "auth.mts", "app/api/auth/[...nextauth]/route.mts", "proxy.mts"  ],
+    ".next/dev/types/**/*.ts", 
+    "auth.mts", 
+    "app/api/auth/[...nextauth]/route.mts", 
+    "proxy.mts", 
+    "auth.config.mts"  
+  ],
   "exclude": [
     "node_modules", 
     ".next"
