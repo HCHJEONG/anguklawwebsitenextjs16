@@ -14,23 +14,23 @@ declare global {
   var __sqliteUsersDb: Database.Database | undefined;
 }
 
-function createUsersDb(): Database.Database {
-  const usersdb = new Database(dbPath, { timeout: 5000 });
-  usersdb.pragma("journal_mode = WAL");
-  usersdb.exec(`
-    CREATE TABLE IF NOT EXISTS users (
+function createDb(): Database.Database {
+  const db = new Database(dbPath, { timeout: 5000 });
+  db.pragma("journal_mode = WAL");
+  db.exec(`
+    CREATE TABLE IF NOT EXISTS notes (
       id INTEGER PRIMARY KEY AUTOINCREMENT,
       nickname TEXT NOT NULL DEFAULT 'ANOM',
       email TEXT NOT NULL DEFAULT '',
       created_at INTEGER NOT NULL DEFAULT (strftime('%s','now') * 1000),
       meta TEXT NOT NULL DEFAULT ''
     );
-    CREATE INDEX IF NOT EXISTS idx_users_created_at ON users(created_at DESC);
+    CREATE INDEX IF NOT EXISTS idx_users_updated_at ON users(updated_at DESC);
   `);
-  return usersdb;
+  return db;
 }
 
-export const usersdb: Database.Database = global.__sqliteDb ?? createUsersDb();
+export const usersdb: Database.Database = global.__sqliteDb ?? createDb();
 if (process.env.NODE_ENV !== "production") {
   global.__sqliteUsersDb = usersdb;
 }
