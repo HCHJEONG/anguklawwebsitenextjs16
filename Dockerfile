@@ -4,13 +4,20 @@ RUN npm install -g pnpm
 FROM base AS deps
 WORKDIR /app
 
+COPY .env.local ./
+RUN mkdir -p /app/data && chmode 666 /app/data
+COPY ./data/auth.db ./data/auth.db
+
 COPY package.json pnpm-lock.yaml* ./
 RUN pnpm install --frozen-lockfile
 
 FROM base AS builder
 WORKDIR /app
 
+RUN mkdir -p /app/data && chmod 666 /app/data
+COPY --from=deps ./data/auth.db ./data/auth.db
 COPY --from=deps /app/node_modules ./node_modules
+COPY --from=deps /app/.env.local ./.env.local
 COPY . .
 RUN pnpm run build
 
@@ -25,12 +32,15 @@ RUN adduser --system --uid 1001 nextjs
 
 # Create the data directory and set permissions BEFORE defining the VOLUME
 RUN mkdir -p /app/data && chown nextjs:nodejs /app/data
+COPY --from=builder ./data/auth.db ./data/auth.db
+
 VOLUME /app/data
 
 COPY --from=builder /app/public ./public
 COPY --from=builder --chown=nextjs:nodejs /app/.next/standalone ./
 COPY --from=builder --chown=nextjs:nodejs /app/.next/static ./.next/static
 
+COPY --from=builder /app/.env.local ./.env.local
 # If you have initial data, copy it, but be careful with volume mounting
 # Overwriting a volume mount with COPY often doesn't work as expected if the volume is already mapped
 COPY --from=builder --chown=nextjs:nodejs /app/data ./data

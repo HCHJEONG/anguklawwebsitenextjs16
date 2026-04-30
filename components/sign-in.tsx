@@ -8,7 +8,7 @@ export default function SignIn () {
       <form
         action={async () => {
           "use server"
-          await signIn("kakao", { callbackUrl: "/" })
+          await signIn("kakao")
         }}
       >
         <button type="submit">
