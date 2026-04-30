@@ -7,6 +7,7 @@ import remarkGfm from "remark-gfm";
 import rehypeHighlight from "rehype-highlight";
 import { deleteNote } from "@/lib/actions";
 import { DeleteButton } from "@/components/DeleteButton";
+import { usePathname } from 'next/navigation';
 
 type EditorProps = {
   initialTitle?: string;
@@ -40,6 +41,8 @@ export function Editor({
   action,
   noteId,
 }: EditorProps) {
+  
+  const pathname = usePathname();
   const [title, setTitle] = useState(initialTitle);
   const [content, setContent] = useState(initialContent || STARTER_TEMPLATE);
   const [isPending, startTransition] = useTransition();
@@ -72,10 +75,7 @@ export function Editor({
         <button type="submit" className="btn primary" disabled={isPending}>
           {isPending ? "Saving..." : submitLabel}
         </button>
-        {/* <button type="button" onClick={()=>boundDelete()} className="btn primary" disabled={isPending}>
-          "Delete"
-        </button> */}
-        <DeleteButton action={boundDelete}/>
+        {pathname.includes('edit')?<DeleteButton action={boundDelete}/>:null}
       </div>
 
       <div className="editor-grid">
