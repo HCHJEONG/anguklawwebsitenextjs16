@@ -4,7 +4,6 @@ import AngukLogo from '@/app/ui/anguk-logo';
 import { ArrowRightIcon } from '@heroicons/react/24/outline';
 import Link from 'next/link';
 import Image from 'next/image';
-import SignIn from '@/components/sign-in';
 
 export default function Page() {
   return (
