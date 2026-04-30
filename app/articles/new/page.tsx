@@ -4,9 +4,6 @@ import { createNote } from "@/lib/actions";
 
 export default async function NewNotePage() {
 
-  // const session = await auth()
-  // if (!session?.user) return <div>Not authenticated</div>
-
   return (
     <>
       <div className="page-header">
