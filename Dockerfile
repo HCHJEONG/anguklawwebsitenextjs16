@@ -5,7 +5,7 @@ FROM base AS deps
 WORKDIR /app
 
 COPY .env.local ./
-RUN mkdir -p /app/data && chmode 666 /app/data
+RUN mkdir -p /app/data && chmod 666 /app/data
 COPY ./data/auth.db ./data/auth.db
 
 COPY package.json pnpm-lock.yaml* ./
