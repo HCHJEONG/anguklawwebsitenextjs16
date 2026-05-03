@@ -3,6 +3,7 @@ import { notFound } from "next/navigation";
 import { queries } from "@/lib/db";
 import { deleteNote } from "@/lib/actions";
 import { MarkdownPreview } from "@/components/MarkdownPreview";
+import { Metadata } from 'next';
 
 export const dynamic = "force-dynamic";
 
@@ -11,6 +12,47 @@ function formatDate(ts: number): string {
     dateStyle: "medium",
     timeStyle: "short",
   });
+}
+
+export async function generateMetadata({ params }:{
+  params: Promise<{ id: string }>;
+}): Promise<Metadata> {
+  const { id } = await params;
+  const noteId = Number(id);
+  if (!Number.isInteger(noteId)) notFound();
+
+  const note = queries.get.get(noteId);
+  if (!note) return {
+    openGraph: {
+      title: 'Anguk Law Offices',
+      description: 'Welcome to Anguk Law Offices',
+      url: 'https://anguklaw.com',
+      siteName: 'Anguk Law Offices',
+      images: [
+        {
+          url: '/assets/img/myofficelobby.jpg', // public 폴더 기준 이미지 경로
+          width: 800,
+          height: 400,
+        },
+      ],
+      locale: 'ko_KR',
+      type: 'website',
+    }
+  };
+
+  return {
+    openGraph: {
+      title: note.title,
+      description: note.content.substring(0, 100),
+      images: [
+        {
+          url: '/assets/img/logo.jpg', // public 폴더 기준 이미지 경로
+          width: 400,
+          height: 400,
+        },
+      ],
+    },
+  }
 }
 
 export default async function NotePage({

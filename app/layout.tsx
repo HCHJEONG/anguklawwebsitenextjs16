@@ -16,6 +16,21 @@ export const metadata: Metadata = {
       'naver-site-verification': ['18e4f197ceff293f0d289c7d5df2187ac91f385b'],
     },
   },
+  openGraph: {
+    title: 'Anguk Law Offices',
+    description: 'Welcome to Anguk Law Offices',
+    url: 'https://anguklaw.com',
+    siteName: 'Anguk Law Offices',
+    images: [
+      {
+        url: '/assets/img/myofficelobby.jpg', // public 폴더 기준 이미지 경로
+        width: 800,
+        height: 400,
+      },
+    ],
+    locale: 'ko_KR',
+    type: 'website',
+  }
 };
 
 export default function RootLayout({

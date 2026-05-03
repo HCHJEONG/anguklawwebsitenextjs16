@@ -5,6 +5,21 @@ export const metadata: Metadata = {
   title: 'Members',
   description: 'Anguk Law Offices is a leading Korean law firm for foreign investors.',
   metadataBase: new URL('https://anguklaw.com/members/attorneys'),
+  openGraph: {
+    title: 'Anguk Law Offices',
+    description: 'Welcome to Anguk Law Offices',
+    url: 'https://anguklaw.com',
+    siteName: 'Anguk Law Offices',
+    images: [
+      {
+        url: '/assets/img/myofficelobby.jpg', // public 폴더 기준 이미지 경로
+        width: 800,
+        height: 400,
+      },
+    ],
+    locale: 'ko_KR',
+    type: 'website',
+  }
 };
  
 export default function Layout({ children }: { children: React.ReactNode }) {
